@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04 java Script Hello World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1>Formulário de cadastro</h1>
+<script>function multiplica(){
+    var e1 = parseInt(document.getElementById("v1").value);
+    var e2 = parseInt(document.getElementById("v2").value);
+    document.getElementById("res").innerHTML="resposta: " + (e1 * e2);
+} 
+</script>
+<h4><label for="nome1">Primeiro Nome:</label></h4>
+<input type="text" id="nome1" name="nome1" value="Marcus">
+<h4><label for="nome2">Segundo Nome:</label></h4>
+<input type="text" id="nome2" name="nome2" value="Vinicius">
+<h4><label for="tel">Telefone:</label></h4>
+<input type="text" id="tel" name="tel" value="">
+<h3>Insira os valores para multiplicar:</h3>
+<p>Valor A:</p>
+<input type="text" id="v1">
+<p>Valor B:</p>
+<input type="text" id="v2">
+<p id="res">Resposta:</p>
+<button type="button" onclick="multiplica()">Multiplica</button>
+<h3>Se possivel, reponda as questões a seguir somente para ajuda de pesquisa:</h3>
+<h4>Quais das matérias a seguir foram mais relevantes:</h4>
+<h4><input type="checkbox" id="t1" name="t1" value="Aplicação de Web">
+<label for="t1">Aplicação de Web</label></h4>
+<h4><input type="checkbox" id="t2" name="t2" value="Hardware e Software">
+<label for="t2">Hardware e Software</label></h4>
+<h4><input type="checkbox" id="t3" name="t3" value="Programação Estruturada">
+<label for="t3">Programação Estruturada</label></h4>
+<h4><input type="checkbox" id="t4" name="t4" value="Português">
+<label for="t4">Português</label></h4>
+<h4><input type="checkbox" id="t5" name="t5" value="Inglês Técnico">
+<label for="t5">Inglês Técnico</label></h4>
+<h4><input type="checkbox" id="t6" name="t6" value="Web back-End">
+<label for="t6">Web back-End</label></h4>    
+<input type="submit" value="Enviar">
+<p id="resp2">Obrigado por utilizar o formulario, tenha uma boa noite!</p>
+<script>
+ if (new Date().getHours() < 18){
+    document.getElementById("resp2").innerHTML="Obrigado por utilizar o formulario, tenha um bom dia!";
+ }
+</script>
+
+<body>
+    
+</body>
+</html>
