@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubeCloThe sua loja atacadista</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('qntd').value);
+            tot = qtd * 30
+            document.getElementById('ctot').value = tot;
+        }
+        function parcela(){
+            var qtdp = parseInt(document.getElementById('x').value)
+            total = calc_total / qtdp
+            document.getElementById('parcela').value = total
+        }    
+        
+    </script>
+    <form oninput="calc_total();", oninput="parcela();" ></form> 
+</head>
+<body>
+    <form action="marcus" oninput="calc_total()" oninput="parcela()">
+    <h2 align="center">ClubeCloThe Sua Loja Atacadista</h2>
+<h4>
+    <p><label for="qntd">Quantidade Selecionada</label>
+    <input type="number" name="qntd" id="qntd"  min="1" max="400" value="0"/></p>
+    <p><label for="ctot">Preço total</label>
+    <input type="text" name="ctot" id="ctot" placeholder="Total a pagar" readonly/><p>
+
+    <p><label for="x">Parcelas</label>
+    <input type="number" name="x" id="x" min="1" max="6" value="0"/></p>
+    <p><label for="parcela">Parcela total</label></p> 
+    <p><input for="text" name="parcela" id="parcela" placeholder="Total a pagar" readonly/></p> 
+
+    <p>Você pode adicionar Cartão de credito:</label></p>
+    <p><input type="radio" name="cart" id="cart1" value="Mastercard">
+    <label for="c1">Mastercard</label></p>
+    <p><input type="radio" name="cart" id="cart2" value="Visa">
+    <label for="c2">Visa</label></p>
+    <p><input type="radio" name="cart" id="cart3" value="Elo">
+    <label for="c3">Elo</label></p>
+    <p><input type="radio" name="cart" id="cart4" value="HiperCard">
+    <label for="c4">HiperCard</label></p>
+    <p><input type="radio" name="cart" id="cart5" value="OuroCard">
+    <label for="c5">OuroCard</label></p>
+    <p>Ou se preferir boleto:</p>
+    <p><input type="radio" name="cart" id="cart6" value="Boleto">
+    <label for="b">Boleto Bancario</label></p><br>
+    <input type="submit" value="Finalizar compra"><br>
+    <br> 
+    <a href="paginaprincipal.html">Voltar para pagina de compras</a>
+    
+       
+
+</h4>    
+    
+</body>
+</html>
